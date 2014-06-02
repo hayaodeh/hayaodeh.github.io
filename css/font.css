@@ -174,11 +174,11 @@ font-style:normal;font-weight:900;
 
 @font-face{
   font-family:'squarespace-ui-font';
-  src: url('fonts/squarespace-ui-font.eot');
-  src: url('fonts/squarespace-ui-font-ie.eot')
-  format('embedded-opentype'),url('fonts/squarespace-ui-font.svg')
-  format('svg'),url('fonts/squarespace-ui-font.woff')
-  format('woff'),url('fonts/squarespace-ui-font.ttf')
+  src: url('../fonts/squarespace-ui-font.eot');
+  src: url('../fonts/squarespace-ui-font-ie.eot')
+  format('embedded-opentype'),url('../fonts/squarespace-ui-font.svg')
+  format('svg'),url('../fonts/squarespace-ui-font.woff')
+  format('woff'),url('../fonts/squarespace-ui-font.ttf')
   format('truetype');
   font-weight:normal;font-style:normal;
 }

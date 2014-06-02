@@ -207,7 +207,7 @@ p {
   position: relative;
 }
 .intro .bg {
-  background-image: url(images/intro.jpg);
+  background-image: url(../images/intro.jpg);
 }
 .approach {
   height: 400px;
@@ -246,7 +246,7 @@ p {
   color: #FC0F1D;
 }
 .approach .bg {
-  background-image: url(images/planner.jpg);
+  background-image: url(../images/planner.jpg);
 }
 .step {
   float: left;
@@ -281,7 +281,7 @@ p {
   position: relative;
 }
 .projects .bg {
-  background-image: url(images/queens.jpg);
+  background-image: url(../images/queens.jpg);
 }
 
 .projects-container {
@@ -404,6 +404,7 @@ p {
   background: #F4F4F4;
   width: 100%;
   padding: 50px;
+  height: 260px;
 }
 .container {
   margin: 0 auto;
@@ -417,4 +418,18 @@ p {
 }
 .sn img {
   width: 100px;
+}
+
+.page-wrap {
+  min-height: 100%;
+  /* equal to footer height */
+  margin-bottom: -250px; 
+}
+.page-wrap:after {
+  content: "";
+  display: block;
+}
+.connect, .page-wrap:after {
+  /* .push must be the same height as footer */
+  height: 250px; 
 }
