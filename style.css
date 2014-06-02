@@ -1,6 +1,6 @@
-    /* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
+/* http://meyerweb.com/eric/tools/css/reset/ 
+ v2.0 | 20110126
+ License: none (public domain)
 */
 
 html, body, div, span, applet, object, iframe,
@@ -48,83 +48,83 @@ table {
 }
 * { box-sizing: border-box }
 /*      .navbar {
-        position: fixed;
-        z-index: 11;
-        top: 50%;
-        right: 15px;
-        padding: 0 10px 0 0;
-        -webkit-transition: opacity .3s 0s linear;
-        -moz-transition: opacity .3s 0s linear;
-        -ms-transition: opacity .3s 0s linear;
-        -o-transition: opacity .3s 0s linear;
-        transition: opacity .3s 0s linear;
-      }
-      .navbar ul {
-        list-style: none;
-        margin: 0;
-        padding: 0;
-      }
-      .navbar ul li {
-        margin: 0;
-        padding: 10px 0 10px 15px;
-        cursor: pointer;
-        color: #FC0F1D;
-      }
-      .navbar ul li a {
-        background-color: #FC0F1D;
-        width: 10px;
-        height: 10px;
-        display: block;
-        text-decoration: none;
-        -webkit-border-radius: 50%;
-        border-radius: 50%;
-        -webkit-transition: background-color .1s linear, border-color .1s linear;
-        -moz-transition: background-color .1s linear, border-color .1s linear;
-        -ms-transition: background-color .1s linear, border-color .1s linear;
-        -o-transition: background-color .1s linear, border-color .1s linear;
-        transition: background-color .1s linear, border-color .1s linear;
-      }
-      .navbar.dark ul li a{
-        background-color: #000;
-      }
-      .navbar.light ul li a{
-        background-color: #fff;
-      }
-      .navbar li span.nav-title {
-        position: absolute;
-        right: 10px;
-        opacity: 0;
-        font-size: 13px;
-        text-transform: uppercase;
-        white-space: nowrap;
-        font-family: "proxima-nova";
-        letter-spacing: 3px;
-        font-weight: 400;
-        font-style: normal;
-        text-decoration: none;
-        margin-top: -11px;
-        padding: 0 0 5px 0;
-        -webkit-transition: all .3s cubic-bezier(.23, 1, .32, 1);
-        -moz-transition: all .3s cubic-bezier(.23, 1, .32, 1);
-        -ms-transition: all .3s cubic-bezier(.23, 1, .32, 1);
-        -o-transition: all .3s cubic-bezier(.23, 1, .32, 1);
-        transition: all .3s cubic-bezier(.23, 1, .32, 1);
-        line-height: 32px;
-        visibility: hidden;
-      }
-      .navbar.light li span.nav-title {
-        color: #fff;
-      }
-      .navbar.dark li span.nav-title {
-        color: #000;
-      }
-      .navbar li:hover span.nav-title {
-        right: 20px;
-        opacity: 1;
-        z-index: 10;
-        padding-right: 15px;
-        visibility: visible;
-      }*/
+  position: fixed;
+  z-index: 11;
+  top: 50%;
+  right: 15px;
+  padding: 0 10px 0 0;
+  -webkit-transition: opacity .3s 0s linear;
+  -moz-transition: opacity .3s 0s linear;
+  -ms-transition: opacity .3s 0s linear;
+  -o-transition: opacity .3s 0s linear;
+  transition: opacity .3s 0s linear;
+}
+.navbar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.navbar ul li {
+  margin: 0;
+  padding: 10px 0 10px 15px;
+  cursor: pointer;
+  color: #FC0F1D;
+}
+.navbar ul li a {
+  background-color: #FC0F1D;
+  width: 10px;
+  height: 10px;
+  display: block;
+  text-decoration: none;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  -webkit-transition: background-color .1s linear, border-color .1s linear;
+  -moz-transition: background-color .1s linear, border-color .1s linear;
+  -ms-transition: background-color .1s linear, border-color .1s linear;
+  -o-transition: background-color .1s linear, border-color .1s linear;
+  transition: background-color .1s linear, border-color .1s linear;
+}
+.navbar.dark ul li a{
+  background-color: #000;
+}
+.navbar.light ul li a{
+  background-color: #fff;
+}
+.navbar li span.nav-title {
+  position: absolute;
+  right: 10px;
+  opacity: 0;
+  font-size: 13px;
+  text-transform: uppercase;
+  white-space: nowrap;
+  font-family: "proxima-nova";
+  letter-spacing: 3px;
+  font-weight: 400;
+  font-style: normal;
+  text-decoration: none;
+  margin-top: -11px;
+  padding: 0 0 5px 0;
+  -webkit-transition: all .3s cubic-bezier(.23, 1, .32, 1);
+  -moz-transition: all .3s cubic-bezier(.23, 1, .32, 1);
+  -ms-transition: all .3s cubic-bezier(.23, 1, .32, 1);
+  -o-transition: all .3s cubic-bezier(.23, 1, .32, 1);
+  transition: all .3s cubic-bezier(.23, 1, .32, 1);
+  line-height: 32px;
+  visibility: hidden;
+}
+.navbar.light li span.nav-title {
+  color: #fff;
+}
+.navbar.dark li span.nav-title {
+  color: #000;
+}
+.navbar li:hover span.nav-title {
+  right: 20px;
+  opacity: 1;
+  z-index: 10;
+  padding-right: 15px;
+  visibility: visible;
+}*/
 
  body, html {
   height: 100%;
