@@ -170,6 +170,23 @@ p {
   position: absolute;
   top: 100px;
   left: 100px;
+  -webkit-transform: translateX(-50px);
+      -ms-transform: translateX(-50px);
+       -o-transform: translateX(-50px);
+          transform: translateX(-50px);
+  opacity: 0;
+  -webkit-transition: all 1s ease;
+     -moz-transition: all 1s ease;
+       -o-transition: all 1s ease;
+      -ms-transition: all 1s ease;
+          transition: all 1s ease;
+}
+.loaded .title {
+  -webkit-transform: translateX(0);
+      -ms-transform: translateX(0);
+       -o-transform: translateX(0);
+          transform: translateX(0);
+  opacity: 1;
 }
 .title .role {
   font-weight: 300;
@@ -206,8 +223,15 @@ p {
   height: 100%;
   position: relative;
 }
+
 .intro .bg {
   background-image: url(../images/intro.jpg);
+  transition: opacity 1.1s ease-in;
+  -webkit-transition: opacity 1.1s ease-in;
+  -o-transition: opacity 1.1s ease-in;
+  -moz-transition: opacity 1.1s ease-in;
+  opacity: 0;
+  z-index: -1;
 }
 .approach {
   height: 400px;

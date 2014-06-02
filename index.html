@@ -18,15 +18,15 @@
       </nav> -->
 
       <section class="intro" id="haya">
+        <div class="title">
+          <h1>HAYA ODEH</h1>
+          <h3 class="role">UI UX DESIGNER</h3>
+        </div>
+        <a href="" class="pdf cta">PDF PORTFOLIO</a>
       <div class="bg"
           data-center="background-position: 50% -100px;"
           data-top-bottom="background-position: 50% -200px;"
           data-anchor-target=".intro">
-          <div class="title">
-            <h1>HAYA ODEH</h1>
-            <h3 class="role">UI UX DESIGNER</h3>
-          </div>
-          <a href="" class="pdf cta">PDF PORTFOLIO</a>
           <div class="scroll-arrow"></div>
       </div>
     </section>
@@ -157,18 +157,29 @@
     <script src="js/jquery.js"></script>
     <!-- <script src="scrollspy.js"></script> -->
     <script>
-      // $('.nav li').on('activate.bs.scrollspy', function() {
-      //   $('.navbar')
-      //     .removeClass('dark')
-      //     .removeClass('light')
-      //     .addClass($(this).data('color'));
-      // });
-      $(function() {
-        $(window).resize(function() {
-          $('.intro').height($(window).height());
-        }).resize();
-        var s = skrollr.init();
-      });
+      (function() {
+        // Preload image.
+        var img = document.createElement('img');
+        img.src = 'images/intro.jpg';
+        img.onload = function() {
+          $('body').addClass('loaded');
+          setTimeout(function() {
+            $('.intro .bg').css('opacity', '1');
+          }, 500);
+        }
+        // $('.nav li').on('activate.bs.scrollspy', function() {
+        //   $('.navbar')
+        //     .removeClass('dark')
+        //     .removeClass('light')
+        //     .addClass($(this).data('color'));
+        // });
+        $(function() {
+          $(window).resize(function() {
+            $('.intro').height($(window).height());
+          }).resize();
+          var s = skrollr.init();
+        });
+      })();
     </script>
   </body>
 </html>
