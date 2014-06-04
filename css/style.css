@@ -215,6 +215,21 @@ p {
 .cf:after {
     clear: both;
 }
+.intro .bg {
+  display: none;
+  opacity: 0;
+  background-image: url(../images/intro.jpg);
+  transition: opacity .7s ease-in;
+  -webkit-transition: opacity .7s ease-in;
+  -o-transition: opacity .7s ease-in;
+  -moz-transition: opacity .7s ease-in;
+  z-index: -1;
+}
+
+.loaded .intro .bg {
+  display: block;
+}
+
 .bg {
   background-position: center center;
   background-repeat: no-repeat;
@@ -224,15 +239,6 @@ p {
   position: relative;
 }
 
-.intro .bg {
-  background-image: url(../images/intro.jpg);
-  transition: opacity .7s ease-in;
-  -webkit-transition: opacity .7s ease-in;
-  -o-transition: opacity .7s ease-in;
-  -moz-transition: opacity .7s ease-in;
-  opacity: 0;
-  z-index: -1;
-}
 .approach {
   height: 400px;
   background: black;
