@@ -216,6 +216,10 @@ p {
     clear: both;
 }
 
+.intro {
+  min-height: 100%;
+}
+
 .intro-holder {
   display: none;
   opacity: 0;
@@ -476,16 +480,7 @@ p {
   width: 100px;
 }
 
-.page-wrap {
-  min-height: 100%;
-  /* equal to footer height */
-  margin-bottom: -250px; 
-}
-.page-wrap:after {
-  content: "";
-  display: block;
-}
-.connect, .page-wrap:after {
+.connect {
   /* .push must be the same height as footer */
-  height: 250px; 
+  height: 250px;
 }
