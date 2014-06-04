@@ -166,6 +166,7 @@ p {
   margin: 0 auto;
 }
 .title {
+  -webkit-backface-visibility: hidden;
   z-index: 99;
   position: absolute;
   top: 100px;
