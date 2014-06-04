@@ -239,6 +239,7 @@ p {
   text-align: center;
   overflow: hidden;
   position: relative;
+  -webkit-transform: translateZ(0);
 }
 .approach:before {
   content: '';
@@ -338,9 +339,7 @@ p {
   width: 100%;
   height: 400px;
   position: relative;
-}
-.projects .bg {
-  background-image: url(../images/queens.jpg);
+  -webkit-transform: translateZ(0);
 }
 
 .projects-container {
