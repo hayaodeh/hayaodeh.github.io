@@ -24,11 +24,8 @@
           <h3 class="role">UI UX DESIGNER</h3>
         </div>
         <a href="https://dl.dropboxusercontent.com/u/256982117/Haya%20GA%20pdf5.pdf" class="pdf cta">PDF PORTFOLIO</a>
-      <div class="bg"
-          data-center="background-position: 50% -100px;"
-          data-top-bottom="background-position: 50% -200px;"
-          data-anchor-target=".intro">
-          <div class="scroll-arrow"></div>
+        <div class="parallax-intro" data-image="images/intro.jpg"></div>
+        <div class="scroll-arrow"></div>
       </div>
     </section>
       <section class="about content cf">
@@ -60,40 +57,22 @@
       <div class="step-container cf">
         <div class="step">
           <div class="img-container">
-            <img
-              data-center="opacity: 1;"
-              data-bottom="opacity:0;"
-              class="colored" src="images/discovery_color.png" />
-            <img
-              data-center="opacity: 0;"
-              data-bottom="opacity:1;"
-              src="images/discovery.png" />
+            <img class="colored" src="images/discovery_color.png" />
+            <img src="images/discovery.png" />
           </div>
           <h4>DISCOVERY</h4><h4>AND RESEARCH</h4>
         </div>
         <div class="step">
           <div class="img-container">
-            <img
-              data-center="opacity: 1;"
-              data-bottom="opacity: 0;"
-              src="images/prototype_color.png" />
-            <img
-              data-center="opacity: 0;"
-              data-bottom="opacity:1;"
-              src="images/prototype.png" />
+            <img class="colored" src="images/prototype_color.png" />
+            <img src="images/prototype.png" />
           </div>
           <h4>PROTOTYPE</h4><h4>AND TEST</h4>
         </div>
         <div class="step">
           <div class="img-container">
-            <img
-              data-center="opacity: 1;"
-              data-bottom="opacity: 0;"
-              src="images/design_color.png" />
-            <img
-              data-center="opacity: 0;"
-              data-bottom="opacity:1;"
-              src="images/design.png" />
+            <img class="colored" src="images/design_color.png" />
+            <img src="images/design.png" />
           </div>
           <h4>DESIGN FROM</h4><h4>THE HEART</h4>
         </div>
@@ -101,13 +80,11 @@
     </section>
 
     <section class="projects">
+
        <div class="title">
         <h2>MY PROJECTS</h2>
       </div>
-      <div class="bg"
-        data-center="background-position: 50% 0px;"
-        data-top-bottom="background-position: 50% -200px;"
-        data-anchor-target=".intro">
+        <div class="parallax-projects" data-image="images/queens.jpg"></div>
       </div>
     </section>
 
@@ -159,33 +136,58 @@
       </div>
     </div>
   </footer>
-
-    <script src="js/skrollr.js"></script>
     <script src="js/jquery.js"></script>
-    <!-- <script src="scrollspy.js"></script> -->
+    <script src="js/jquery.throttle.js"></script>
+    <script src="js/imagescroll.js"></script>
     <script>
       (function() {
-        // Preload image.
+        $('.parallax-intro').imageScroll({
+          coverRatio: 1,
+          mediaWidth: 1500,
+          mediaHeight: 1125,
+          holderClass: 'intro-holder'
+        });
+        $('.parallax-projects').imageScroll({
+          coverRatio: .7,
+          mediaWidth: 3264,
+          mediaHeight: 2448
+        });
+
+        var $win = $(window);
+        var $quote = $('.quote');
+        var $steps = $('.step-container');
+        $win.scroll($.throttle(100, function() {
+          var scroll = $win.scrollTop();
+          var winHeight = $win.height();
+          if (scroll >= $quote.offset().top - winHeight - 100) {
+            $quote.addClass('active');
+          } else {
+            $quote.removeClass('active');
+          }
+          if (scroll > $steps.offset().top - winHeight) {
+            $steps.addClass('active');
+          } else {
+            $steps.removeClass('active');
+          }
+        }));
+
+
+        // Preload image for a nice transition
         var img = document.createElement('img');
         img.src = 'images/intro.jpg';
         img.onload = function() {
           $('body').addClass('loaded');
           setTimeout(function() {
-            $('.intro .bg').css('opacity', '1');
+            $('.intro-holder').css('opacity', '1');
           }, 500);
         }
+
         // $('.nav li').on('activate.bs.scrollspy', function() {
         //   $('.navbar')
         //     .removeClass('dark')
         //     .removeClass('light')
         //     .addClass($(this).data('color'));
         // });
-        $(function() {
-          $(window).resize(function() {
-            $('.intro').height($(window).height());
-          }).resize();
-          var s = skrollr.init();
-        });
       })();
     </script>
   </body>

@@ -215,28 +215,18 @@ p {
 .cf:after {
     clear: both;
 }
-.intro .bg {
+
+.intro-holder {
   display: none;
   opacity: 0;
-  background-image: url(../images/intro.jpg);
-  transition: opacity .7s ease-in;
   -webkit-transition: opacity .7s ease-in;
   -o-transition: opacity .7s ease-in;
   -moz-transition: opacity .7s ease-in;
-  z-index: -1;
+  transition: opacity .7s ease-in;
 }
 
-.loaded .intro .bg {
+.loaded .intro-holder {
   display: block;
-}
-
-.bg {
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-  height: 100%;
-  position: relative;
 }
 
 .approach {
@@ -253,6 +243,7 @@ p {
   vertical-align: middle;
   margin-right: -0.25em; /* Adjusts for spacing */
 }
+
 .quote {
   text-align: center;
   display: inline-block;
@@ -261,6 +252,21 @@ p {
   font-size: 32px;
   width: 400px;
   font-weight: 700;
+  -webkit-transform: translateY(100px);
+      -ms-transform: translateY(100px);
+       -o-transform: translateY(100px);
+          transform: translateY(100px);
+  -webkit-transition: all 1s ease;
+     -moz-transition: all 1s ease;
+       -o-transition: all 1s ease;
+      -ms-transition: all 1s ease;
+          transition: all 1s ease;
+}
+.quote.active {
+  -webkit-transform: translateY(-44px);
+      -ms-transform: translateY(-44px);
+       -o-transform: translateY(-44px);
+          transform: translateY(-44px);
 }
 
 .quote .part2, .quote .part3 {
@@ -289,9 +295,28 @@ p {
 .step h4:nth-child(3) {
   margin-top: 5px;
 }
+
 .step-container {
   margin: 0 auto;
   padding: 100px 0;
+}
+
+.step img {
+  -webkit-transition: opacity 2s ease;
+     -moz-transition: opacity 2s ease;
+       -o-transition: opacity 2s ease;
+      -ms-transition: opacity 2s ease;
+          transition: opacity 2s ease;
+}
+
+.step .colored {
+  opacity: 0;
+}
+.active .step .colored {
+  opacity: 1;
+}
+.active .step img:not(.colored) {
+  opacity: 0;
 }
 
 .img-container {
