@@ -169,15 +169,16 @@
           }
         }));
 
-
         // Preload image for a nice transition
         var img = document.createElement('img');
         img.src = 'images/intro.jpg';
         img.onload = function() {
-          $('body').addClass('loaded');
-          setTimeout(function() {
-            $('.intro-holder').css('opacity', '1');
-          }, 500);
+          $(function() {
+            $('body').addClass('loaded');
+            setTimeout(function() {
+              $('.intro-holder').css('opacity', '1');
+            }, 500);
+          });
         }
 
         // $('.nav li').on('activate.bs.scrollspy', function() {
