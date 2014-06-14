@@ -172,11 +172,11 @@ p {
   top: 100px;
   left: 50px;
   opacity: 0;
-  -webkit-transition: all 1s ease;
-     -moz-transition: all 1s ease;
-       -o-transition: all 1s ease;
-      -ms-transition: all 1s ease;
-          transition: all 1s ease;
+  -webkit-transition: -webkit-transform 1s ease;
+     -moz-transition: -moz-transform 1s ease;
+       -o-transition: -o-transform 1s ease;
+      -ms-transition: -ms-transform 1s ease;
+          transition: transform 1s ease;
 }
 .loaded .title {
   -webkit-transform: translateX(50px);
